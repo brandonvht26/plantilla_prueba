@@ -31,3 +31,8 @@ La interfaz debe sentirse viva y Premium:
 ## 5. Diseño Responsive y SafeArea
 - **Android Botones vs Gestos:** Usar siempre `SafeArea` correctamente (bottom: true, top: true) para que la UI use todo el espacio disponible si el usuario navega por gestos, pero que respete el espacio de la barra de navegación si usa los antiguos botones fijos de Android.
 - **Botones de Retroceso:** Toda pantalla anidada debe tener un medio obvio para retroceder (AppBar nativo con leading icon). No sobreescribir la lógica de retroceso de Android sin una buena razón (ej. no dejar que salgan accidentalmente a la mitad de una carga).
+
+## 6. Tipografía
+- **Fuente Principal (Texto base y lectura):** `Lexend`. Se aplica globalmente como fuente por defecto en el `ThemeData`.
+- **Fuente de Títulos y Encabezados:** `PlusJakartaSans`. Se debe usar estrictamente para los atributos `display`, `headline` y `title` del `TextTheme`.
+- No inyectar fuentes directamente usando `fontFamily` en los `TextStyle` individuales a menos que sea estrictamente necesario para sobreescribir el tema en un caso muy aislado. Usa siempre `Theme.of(context).textTheme...`.

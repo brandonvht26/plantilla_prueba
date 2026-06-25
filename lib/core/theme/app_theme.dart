@@ -5,7 +5,19 @@ class AppTheme {
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,
+      fontFamily: 'Lexend',
       scaffoldBackgroundColor: AppColors.background,
+      textTheme: const TextTheme(
+        displayLarge: TextStyle(fontFamily: 'PlusJakartaSans', fontWeight: FontWeight.bold),
+        displayMedium: TextStyle(fontFamily: 'PlusJakartaSans', fontWeight: FontWeight.bold),
+        displaySmall: TextStyle(fontFamily: 'PlusJakartaSans', fontWeight: FontWeight.bold),
+        headlineLarge: TextStyle(fontFamily: 'PlusJakartaSans', fontWeight: FontWeight.bold),
+        headlineMedium: TextStyle(fontFamily: 'PlusJakartaSans', fontWeight: FontWeight.bold),
+        headlineSmall: TextStyle(fontFamily: 'PlusJakartaSans', fontWeight: FontWeight.bold),
+        titleLarge: TextStyle(fontFamily: 'PlusJakartaSans', fontWeight: FontWeight.w600),
+        titleMedium: TextStyle(fontFamily: 'PlusJakartaSans', fontWeight: FontWeight.w600),
+        titleSmall: TextStyle(fontFamily: 'PlusJakartaSans', fontWeight: FontWeight.w600),
+      ),
       colorScheme: const ColorScheme.light(
         primary: AppColors.primary,
         secondary: AppColors.secondary,
